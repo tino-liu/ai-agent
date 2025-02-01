@@ -1,6 +1,6 @@
 import { SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
-import { ArrowRight, Link } from "lucide-react";
-import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
