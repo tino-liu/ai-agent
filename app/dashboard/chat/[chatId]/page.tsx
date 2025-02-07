@@ -12,7 +12,7 @@ interface ChatPageParams {
 
 async function ChatPage({ params }: ChatPageParams) {
 
-    const chatId = await params;
+    const { chatId } = await params;
 
     const { userId } = await auth();
 
@@ -24,7 +24,7 @@ async function ChatPage({ params }: ChatPageParams) {
 
         const convex = getConvexClient();
 
-        const initialMessages = await convex.query(api.messages.list, chatId);
+        const initialMessages = await convex.query(api.messages.list, { chatId });
 
 
         return (
