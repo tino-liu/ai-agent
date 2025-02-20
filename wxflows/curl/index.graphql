@@ -25,6 +25,6 @@ type RootEntry {
 }
 
 type Query {
-  myQuery: [RootEntry]
+  customerQuery: [RootEntry]
     @rest(endpoint: "https://introspection.apis.stepzen.com/customers")
 }
