@@ -5,13 +5,13 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
+```
+
+Then run Convex development mode:
+
+```bash
+npx convex dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -35,6 +35,16 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+## All Dependencies
+- pnpm i @radix-ui/react-icons
+
+<!-- LangChain -->
+- pnpm add langchain
+- pnpm add @langchain/core
+- pnpm add @langchain/langgraph
+- pnpm add @langchain/anthropic (For using Claude)
+- pnpm add @langchain/openai (This also supports Azure OpenAI)
+- pnpm add @wxflows/sdk@beta
 
 ## Tutorial steps
 
